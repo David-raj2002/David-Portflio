@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David - Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="./images/david-pic.jpg" alt="David Raj">
+            <h1>David Raj</h1>
+        </div>
+    </header>
+    <section>
+        <div class="nav">
+            <ol>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="project.html" class="nav-link">Project</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ol>
+        </div>
+    </section>
+</body>
+  
+<script>
+    // Highlight the clicked page link and navigate
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Remove 'active' class from all links
+            links.forEach(link => link.classList.remove('active'));
+            // Add 'active' class to the clicked link
+            this.classList.add('active');
+        });
+    });
+</script>
+
+
+
+</html>

@@ -1,0 +1,109 @@
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    object-fit: cover; /* Ensures the image is contained within the frame */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navigation Styling */
+.nav {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+
+.nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ff4c60; /* Hover effect */
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav ol {
+        gap: 10px;
+    }
+
+    .nav li {
+        font-size: 1rem;
+    }
+
+    .profile img {
+        width: 100px; /* Smaller image size for mobile */
+        height: 100px;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navigation Styling */
+.nav {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+
+.nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #ff4c60;
+    border-radius: 5px;
+}
+/* Contact Info Styling */
+.contact-info {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.contact-info a {
+    color: #ff4c60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4c60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e43e50;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff4c60;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav ol {
+        gap: 10px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
